@@ -8,7 +8,4 @@ import io.micronaut.http.client.annotation.Client;
 public interface BigDecimalClient {
     @Post("dto")
     Dto postDto(@Body Dto value);
-
-    @Post("dto")
-    StringDto postDto(@Body StringDto value);
 }

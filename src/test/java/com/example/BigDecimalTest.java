@@ -30,13 +30,4 @@ class BigDecimalTest {
         Assertions.assertEquals(dtoIn.getBigDecimal(), dtoOut.getBigDecimal());
     }
 
-    @Test
-    void bigDecimal_stringValue() {
-        var dtoIn = new StringDto();
-        dtoIn.setBigDecimal("100");
-
-        var dtoOut = client.postDto(dtoIn);
-        Assertions.assertEquals(dtoIn.getBigDecimal(), dtoOut.getBigDecimal());
-    }
-
 }
