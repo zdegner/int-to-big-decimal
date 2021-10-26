@@ -20,6 +20,9 @@ micronaut {
 }
 
 dependencies {
+    implementation "org.projectlombok:lombok"
+    annotationProcessor "org.projectlombok:lombok"
+
     annotationProcessor("io.micronaut:micronaut-http-validation")
     implementation("io.micronaut:micronaut-http-client")
     implementation("io.micronaut:micronaut-runtime")
